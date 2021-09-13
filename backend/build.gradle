@@ -38,10 +38,6 @@ task stage {
 	dependsOn build
 }
 
-plugins {
-	id 'java'
-}
-
 jar {
 	manifest {
 		attributes(
