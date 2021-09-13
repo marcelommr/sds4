@@ -1,6 +1,4 @@
-import BarChart from "components/BarChart";
-import DataTable from "components/DataTable";
-import DonutChart from "components/DonutChart";
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
 
@@ -10,12 +8,15 @@ const Home = () => {
     
     <>
     <NavBar />
-    <div className="container">
-        <h1 className="text-primary"> Home </h1>
-      <div className="text-primary py-3">
-        <div className="row px-3">  
-          <h5 className="text-center text-secondary">Ir para Dashboard: <a href="/dashboard"> Clique Aqui </a></h5>
-        </div>
+      <div className="container">
+      <div className="jumbotron">
+          <h1 className="display-4">DSVendas</h1>
+          <p className="lead">Analise o desempenho das suas vendas por diferentes perspectivas</p>
+          <hr/>
+          <p>Esta aplicação consiste em exibir um dashboard a partir de dados fornecidos por um back end construído com Spring Boot.</p>
+          <Link className="btn btn-primary btn-lg" to="/dashboard"> 
+          Acessar Dashboard 
+          </Link>
       </div>
       </div>
     <Footer />
