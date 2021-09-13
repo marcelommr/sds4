@@ -4,36 +4,11 @@ import NavBar from "components/NavBar";
 import DataTable from "components/DataTable";
 import BarChart from "components/BarChart";
 import DonutChart from "components/DonutChart";
+import Routes from "Routes";
 
 function App() {
   return (
-    <>
-    <NavBar />
-    <div className="container">
-        <h1 className="text-primary"> Dashboard de vendas </h1>
-
-      <div className="text-primary py-3">
-        <div className="row px-3">  
-          <div className="col-sm-6"> 
-          <h5 className="text-center text-secondary">Taxa de Sucesso (%)</h5>
-          <BarChart />
-          </div>
-          <div className="col-sm-6"> 
-          <h5 className="text-center text-secondary">Todas vendas</h5>
-          <DonutChart />
-          </div>
-        </div>
-      </div>
-
-      <div className="row py-3"> 
-      <h2 className="text-primary"> Todas as vendas</h2>
-      <DataTable />
-      </div>
-
-
-      </div>
-    <Footer />
-    </>
+    <Routes />
   );
 }
 
